@@ -58,6 +58,7 @@ body{
     justify-content: space-around;
     width: 100vw;
     margin: 100px 0px 0px 0px;
+    z-index: 1;
 }
 .cardMini{
     @include cardMini
@@ -79,14 +80,74 @@ body{
     height: 46px;
     font-weight: 600;
     font-size: 18px;
-    
+    text-align: center;   
 }
 .detail{
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
+    width: 67px;
     font-weight: 600;
     font-size: 11px;
     color: #999999;
     margin: -8px 0px 0px 9px;
+}
+.bookMark{
+    width: 30px;
+    height: 32px;
+    background: none;
+    border: 0;
+    margin-left: 30px;
+    font-size: x-large;
+    color: #999999;
+    
+}
+.btnOptions{
+    display: flex;
+    top: 791px;
+    position: fixed;
+    width: 100vw;
+    height: 36px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 2;
+}
+.btnPurpleDos{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    width: 142px;
+    height: 36px;
+    background: $purple;
+    border-radius: 4px;
+    border: none;
+    color: $white;
+    line-height: 16px;
+    &:hover {
+        background: $purple;
+    }
+    &:active{
+        background: rgba(107, 99, 181, 0.6);
+    }
+    .icons{
+        font-size: x-large;
+    }
+}
+#modalTitle{
+font-weight: 600;
+font-size: 24px;
+line-height: 40px;
+color: #000000;
+}
+.check{
+    font-size: 14px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #263238;
 }

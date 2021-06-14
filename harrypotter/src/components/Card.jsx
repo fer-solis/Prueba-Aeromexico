@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsBookmark } from "react-icons/bs";
 
 const colorsBackground = {
     Gryffindor: 'linear-gradient(358.61deg, #FF0000 4.67%, #FED482 96.97%)',
@@ -20,7 +21,12 @@ function Card({customData}) {
                   <div className='detail'>
                       <p>{character.alive ? 'VIVO' : 'FINADO'}<br/>
                       {character.hogwartsStudent ? 'ESTUDIANTE' : 'STAFF'}</p>
+                      <button className='bookMark'>
+                      <BsBookmark/>
+                      </button>
                   </div>
+                   
+                  
             </div>
           ))}  
 
