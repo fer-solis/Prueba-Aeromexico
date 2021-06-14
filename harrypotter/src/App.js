@@ -23,6 +23,7 @@ function App() {
       <img src={Logo} className='logo' alt=''/>
       <p className='firstText'>Selecciona tu filtro</p>
       <BtnFilter handleView={handleView}/>
+      </div>
       {(() => {
         if (view === 'characters') {
           return (
@@ -38,7 +39,7 @@ function App() {
           )
         }
       })()}
-      </div>
+      
     </div>
   );
 }
