@@ -1,6 +1,28 @@
-body {
-    background-color: black;
+// Configuration
+@import "functions";
+@import "variables";
+
+
+body{
+    background-color: $black;
 }
-p {
-    color:white;
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 169px;
+    height: 80px;
+    margin: 30px 76px 0px 75px;
+    .logo{
+        width: 123.33px;
+        height: 42px;
+    }
+    .firstText{
+        color: white;
+        padding-top: 10px;
+        font-weight: 700px;
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
