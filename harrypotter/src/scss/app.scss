@@ -1,10 +1,10 @@
-// Configuration
-@import "functions";
-@import "variables";
-
+@import "~bootstrap/scss/bootstrap";
+@import './variables';
 
 body{
     background-color: $black;
+    font-family: $font-family-sans-serif;
+    color: $white;
 }
 
 .header{
