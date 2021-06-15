@@ -51,6 +51,8 @@ En lo personal disfruté mucho este reto porque aprendí cosas nuevas como SAAS 
 Si hubiese tenido más tiempo me hubiera gustado realizar test con React, utilizar Redux en mi proyecto y trabajar más la pantalla desktop para que quedara exactamente igual que el prototipo en todos los dispositivos y no solo en mobile como lo logré
 
 ## 6. Pain point
-*En el modal para crear un nuevo personaje, en el prototipo no se consideró si el personaje estaba vivo o finado, lo que hice fue agregar esa opción con radio buttons para que también puedan indicar ese dato. 
-*En los archivos que contenían data, los objetos no tenían un id, lo que hice fue que para trabajar agregué un id a los personajes que ya existían (solo en el archivo que utilicé) para poder seguir agregando más personajes
-*Para las cards consumí la data local y no con json-server, esto con la finalidad de que si no pudieran correrse los dos servidores, siempre puedan mostrarse las tarjetas de los personajes
+ 
+* En el modal para crear un nuevo personaje, en el prototipo no se consideró si el personaje estaba vivo o finado, lo que hice fue agregar esa opción con radio buttons para que también puedan indicar ese dato. 
+* En los archivos que contenían data, los objetos no tenían un id, lo que hice fue que para trabajar agregué un id a los personajes que ya existían (solo en el archivo que utilicé) para poder seguir agregando más personajes.
+* Para las cards consumí la data local y no con json-server, esto con la finalidad de que si no pudieran correrse los dos servidores, siempre puedan mostrarse las tarjetas de los personajes.
+
