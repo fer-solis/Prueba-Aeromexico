@@ -34,6 +34,7 @@ La prueba consiste en desarrollar una aplicación 100% por encargo, en donde se 
 
 ## 3. Instrucciones
 * `http://localhost:3000/`: debe levantarse primero React, por lo general será en el puerto 3000
+* `npm install`: para las librerías ocupadas en el proyecto
 * `json-server --watch src/data/hp-characters.json --port 3001`: ahora es importante **entrar a la carpeta harrypotter** y utilizar el comando antes señalado para poder agregar nuevos personajes
 * `http://localhost:3001/data`: podemos acceder al puerto 3001 para poder ver la data que se esta trabajando
 * Ahora que ya podemos ver el proyecto, es mejor verlo en inspeccionar Responsive con las siguientes especificaciones: 
@@ -42,13 +43,14 @@ La prueba consiste en desarrollar una aplicación 100% por encargo, en donde se 
   </div>
   
   Esto es porque decidí utilizar la técnica mobile first para que después no se trate de arrugar el diseño para que entre en pantallas más chicas. Así podemos partir de cómo se ve y comporta la aplicación en una pantalla y entorno móvil.
+* `npm run test`: es para correr test realizados
 
 
 ## 4. Lo que más me gustó
 En lo personal disfruté mucho este reto porque aprendí cosas nuevas como SAAS y Redux y reforcé lo que he estado haciendo. Me gustó organizarme en accionables pequeños y alcanzables para seguir avanzando y poder planear siguientes iteraciones. Con lo que más me quedo satisfecha es que mi app es fiel al look & feel y que las funcionalidades principales las logré
 
 ## 5. Qué mejoraría
-Si hubiese tenido más tiempo me hubiera gustado realizar test con React, utilizar Redux en mi proyecto y trabajar más la pantalla desktop para que quedara exactamente igual que el prototipo en todos los dispositivos y no solo en mobile como lo logré
+Si hubiese tenido más tiempo me hubiera gustado realizar más test con React, utilizar Redux en mi proyecto y trabajar más la pantalla desktop para que quedara exactamente igual que el prototipo en todos los dispositivos y no solo en mobile como lo logré
 
 ## 6. Pain point
  
