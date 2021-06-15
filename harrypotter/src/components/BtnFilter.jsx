@@ -17,6 +17,13 @@ const BtnFilter = ({ handleView }) => {
       >
         STAFF
       </Button>
+      <Button
+        bsPrefix="btnPurple"
+        variant="outline"
+        onClick={() => handleView("viewAlive")}
+      >
+        VIVOS
+      </Button>
     </div>
   );
 };
