@@ -16,7 +16,6 @@ const customData = characterData.data;
 const alive = customData.filter((element) => {
   return element.alive === true;
 });
-console.log(alive);
 
 function App() {
   const [view, setView] = useState("characters");
@@ -33,15 +32,6 @@ function App() {
         <p className="firstText">Selecciona tu filtro</p>
         <BtnFilter handleView={handleView} />
       </div>
-      {/* {(() => {
-        if (view === "characters") {
-          return <Card customData={customData} />;
-        } else if (view === "viewStudent") {
-          return <Card customData={students} />;
-        } else {
-          return <Card customData={staff} />;
-        }
-      })()} */}
       {(() => {
         if (view === "characters") {
           return <Card customData={customData} />;
