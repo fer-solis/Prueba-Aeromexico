@@ -15,6 +15,7 @@ function NewModal(props) {
     hairColor: "",
     gender: "",
     position: "",
+    status: "",
   });
 
   const save = () => {
@@ -39,67 +40,87 @@ function NewModal(props) {
       [e.target.hairColor]: e.target.value,
       [e.target.gender]: e.target.value,
       [e.target.position]: e.target.value,
+      [e.target.status]: e.target.value,
     });
   };
 
   return (
     <Modal {...props} centered>
-      <Modal.Header>
+      <Modal.Header closeButton>
         <Modal.Title id="modalTitle">Agregar un personaje</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <form>
-          <div className="addContainer">
+          <div className="dataCharacterContainer">
             <TextField
-              className="addFact"
-              id="filled-basic"
+              className="addData"
               label="Nombre"
               variant="filled"
               name="name"
               onChange={addCharacter}
             />
             <TextField
-              className="addFact"
-              id="filled-basic"
+              className="addData"
+              label="Cumpleaños"
               type="date"
               variant="filled"
               name="date"
               onChange={addCharacter}
             />
             <TextField
-              className="addFact"
-              id="filled-basic"
+              className="addData"
               label="Color de ojos"
               name="eyesColor"
               variant="filled"
               onChange={addCharacter}
             />
             <TextField
-              className="addFact"
-              id="filled-basic"
+              className="addData"
               label="Color de pelo"
               name="hairColor"
               variant="filled"
               onChange={addCharacter}
             />
-            <div className="radio">
-              <FormLabel>GÉNERO</FormLabel>
-              <RadioGroup name="gender" onChange={addCharacter}>
-                <Radio value="woman" /> Mujer
-                <Radio value="men" /> Hombre
-              </RadioGroup>
-              <FormLabel>POSICIÓN</FormLabel>
-              <RadioGroup name="position" onChange={addCharacter}>
-                <Radio value="student" /> Estudiante
-                <Radio value="staff" /> Staff
-              </RadioGroup>
-            </div>
+          </div>
+          <div className="radio">
+            <FormLabel className="text">GÉNERO</FormLabel>
+            <RadioGroup
+              className="radioGroup"
+              name="gender"
+              onChange={addCharacter}
+            >
+              <Radio color="primary" value="woman" /> Mujer
+              <Radio color="primary" value="men" /> Hombre
+            </RadioGroup>
+            <FormLabel className="text">POSICIÓN</FormLabel>
+            <RadioGroup
+              className="radioGroup"
+              name="position"
+              onChange={addCharacter}
+            >
+              <Radio color="primary" value="staff" /> Staff
+              <Radio color="primary" value="student" /> Estudiante
+            </RadioGroup>
+            <FormLabel className="text">ESTADO DE VIDA</FormLabel>
+            <RadioGroup
+              className="radioGroup"
+              name="status"
+              onChange={addCharacter}
+            >
+              <Radio color="primary" value="alive" /> Vivo
+              <Radio color="primary" value="dead" /> Finado
+            </RadioGroup>
           </div>
         </form>
       </Modal.Body>
-      <Modal.Footer>
+      <Modal.Footer
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
         <Button
-          className="save"
+          bsPrefix="btnSave"
           onClick={() => {
             save();
           }}
