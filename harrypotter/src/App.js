@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Button, ButtonGroup } from "react-bootstrap";
-import { BsBookmarkFill, BsPersonPlusFill } from "react-icons/bs";
+import { BsPersonPlusFill } from "react-icons/bs";
 
 import "./scss/app.scss";
 import Logo from "./img/HarryPotter.png";
 import BtnFilter from "./components/BtnFilter";
 import Card from "./components/Card";
 import NewModal from "./components/Modal";
+import BtnFavorites from "./components/BtnFavorites";
 
 const characterData = require("./data/hp-characters.json");
 const students = require("./data/hp-students.json");
@@ -39,9 +40,10 @@ function App() {
       })()}
       <div className="btnOptions">
         <ButtonGroup>
-          <Button bsPrefix="btnPurpleDos">
+          <BtnFavorites />
+          {/* <Button bsPrefix="btnPurpleDos">
             FAVORITOS <BsBookmarkFill className="icons" />
-          </Button>
+          </Button> */}
           <Button bsPrefix="btnPurpleDos" onClick={() => setModalShow(true)}>
             AGREGAR <BsPersonPlusFill className="icons" />
           </Button>
