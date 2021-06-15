@@ -41,9 +41,6 @@ function App() {
       <div className="btnOptions">
         <ButtonGroup>
           <BtnFavorites />
-          {/* <Button bsPrefix="btnPurpleDos">
-            FAVORITOS <BsBookmarkFill className="icons" />
-          </Button> */}
           <Button bsPrefix="btnPurpleDos" onClick={() => setModalShow(true)}>
             AGREGAR <BsPersonPlusFill className="icons" />
           </Button>

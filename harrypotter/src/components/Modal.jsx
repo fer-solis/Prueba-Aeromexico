@@ -20,8 +20,8 @@ function NewModal(props) {
 
   const save = () => {
     fetch("http://localhost:3001/data", {
-      method: "POST", // or 'PUT'
-      body: JSON.stringify(newCharacter), // data can be `string` or {object}!
+      method: "POST",
+      body: JSON.stringify(newCharacter),
       headers: {
         "Content-Type": "application/json",
       },

@@ -9,14 +9,14 @@ const BtnFilter = ({ handleView }) => {
         onClick={() => handleView("viewStudent")}
       >
         ESTUDIANTES
-      </Button>{" "}
+      </Button>
       <Button
         bsPrefix="btnPurple"
         variant="outline"
         onClick={() => handleView("viewStaff")}
       >
         STAFF
-      </Button>{" "}
+      </Button>
     </div>
   );
 };

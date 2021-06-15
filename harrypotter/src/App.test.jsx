@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { fireEvent, render } from "@testing-library/react";
+import "@testing-library/jest-dom/extend-expect";
+import BtnFilter from "./components/BtnFilter";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("renders click", () => {
+  const mockHandler = jest.fn;
+  const btn = {
+    content: "ESTUDIANTES",
+  };
+  const component = render(<BtnFilter btn={btn} handleView={mockHandler} />);
+  const btnfilter = component.getByText("ESTUDIANTES");
+  fireEvent.click(btnfilter);
 });
